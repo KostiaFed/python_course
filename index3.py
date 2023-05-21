@@ -1,10 +1,12 @@
-arr = [1, 2, 3, 4, 5, 6]
-iter = 0
-max = 0
+a = 'abra abra abra kadabra'
 
-while iter < len(arr):
-    if arr[iter] > max:
-      max = arr[iter]
-    iter +=1
+counts = dict()
+words = a.split()
 
-print(max)
+for word in words:
+  if word in counts:
+    counts[word] += 1
+  else:
+    counts[word] = 1
+
+print(counts)

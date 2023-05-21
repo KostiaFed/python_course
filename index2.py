@@ -1,8 +1,7 @@
-arr = [1, 2, 3, 4, 5, 6]
-iter = 0
+a = "a14b6fh"
+b = set(a)
 
-while iter < len(arr):
-    arr[iter] = arr[iter]**2
-    iter += 1
-
-print(arr)
+if len(a) == len(b):
+    print('All symbols unique')
+else:
+    print('Have not unique')
